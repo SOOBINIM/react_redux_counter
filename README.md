@@ -95,6 +95,7 @@ export default counter;
 ```
 (redux-actions)
 ```javascript
+// 리듀서 함수
 const counter = handleActions(
     // 액션에 대한 업데이트 함수
     {
