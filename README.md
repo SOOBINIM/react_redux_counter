@@ -30,12 +30,12 @@ export default connect(mapStateToProps, mapDispatchToProps)(CounterContainer);
 ```
 
 
-(useSelector + useDispatch + useEffect)
+(useSelector + useDispatch + useCallback)
 ```javascript
 import { useSelector, useDispatch } from "react-redux";
 import { useCallback } from "react";
 
-// 5. useSelector + useDispatch + useEffect 사용
+// useSelector + useDispatch + useCallback 사용
 const CounterContainer = () => {
     const number = useSelector(state => state.counter.number);
     const dispatch = useDispatch();
